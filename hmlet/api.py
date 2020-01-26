@@ -1,5 +1,5 @@
 from rest_framework import routers
-from core import views as photos_views
+from photos import views as photo_views
 
 router = routers.DefaultRouter()
-router.register(r'photos', photos_views.PhotoViewSet)
+router.register(r'photos', photo_views.PhotoViewSet)
